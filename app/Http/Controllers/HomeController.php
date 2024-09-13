@@ -26,6 +26,7 @@ class HomeController extends Controller
     {
         $angka1 = $request->angka1;
         $angka2 = $request->angka2;
-        return $angka1 + $angka2;
+
+        return view('tambah', ['angka1' => $angka1, 'angka2' => $angka2]);
     }
 }
