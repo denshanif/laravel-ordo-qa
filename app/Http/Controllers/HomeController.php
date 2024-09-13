@@ -21,4 +21,11 @@ class HomeController extends Controller
     {
         return $angka * 2;
     }
+
+    public function tambah(Request $request)
+    {
+        $angka1 = $request->angka1;
+        $angka2 = $request->angka2;
+        return $angka1 + $angka2;
+    }
 }
