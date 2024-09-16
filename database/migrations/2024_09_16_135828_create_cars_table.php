@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('type');
-            $table->string('price');
-            $table->string('prod_year');
+            $table->decimal('price');
+            $table->date('prod_date');
             $table->timestamps();
         });
     }
