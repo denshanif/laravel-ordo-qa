@@ -9,6 +9,14 @@
 </head>
 
 <body>
+    @if ($errors->any())
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    @endif
+
     <h1>Tambah</h1>
     <h3>Angka 1 : {{ $angka1 }}</h3>
     <h3>Angka 2 : {{ $angka2 }}</h3>
