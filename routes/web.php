@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CarController;
+use App\Http\Controllers\ManufactureController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,7 @@ Route::get('/tambah', [HomeController::class, 'tambah']);
 Route::get('/cars', [CarController::class, 'index']);
 
 Route::get('/cars/insert', [CarController::class, 'store']);
+
+Route::get('/manufactures', [ManufactureController::class, 'index']);
+
+Route::get('/manufactures/insert', [ManufactureController::class, 'store']);
