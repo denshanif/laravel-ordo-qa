@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\ManufactureController;
+use App\Http\Controllers\ReviewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +32,7 @@ Route::get('/cars/insert', [CarController::class, 'store']);
 Route::get('/manufactures', [ManufactureController::class, 'index']);
 
 Route::get('/manufactures/insert', [ManufactureController::class, 'store']);
+
+Route::get('/reviews', [ReviewController::class, 'index']);
+
+Route::get('/reviews/insert', [ReviewController::class, 'store']);
