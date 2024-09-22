@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\ManufactureController;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\FeatureController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +37,7 @@ Route::get('/manufactures/insert', [ManufactureController::class, 'store']);
 Route::get('/reviews', [ReviewController::class, 'index']);
 
 Route::get('/reviews/insert', [ReviewController::class, 'store']);
+
+Route::get('/features', [FeatureController::class, 'index']);
+
+Route::get('/features/insert', [FeatureController::class, 'store']);

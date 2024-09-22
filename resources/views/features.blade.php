@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cars</title>
+    <title>Car Features</title>
 </head>
 
 <body>
-    <h1>{{ $cars->name }}</h1>
-    <p>{{ $cars->type }}</p>
-    <p>{{ $cars->price }}</p>
-    <p>{{ $cars->prod_date }}</p>
+    <h1>List available features</h1>
 
-    @foreach ($cars->features as $feature)
+    @foreach ($features as $feature)
         <ul>
             <li>{{ $feature->name }}</li>
         </ul>
